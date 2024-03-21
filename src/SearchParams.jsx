@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function SearchParams() {
   const [location, setLocation] = useState("");
@@ -18,6 +19,9 @@ function SearchParams() {
         </label>
         <button>Submit</button>
       </form>
+      <Link to={`/details/1`}>
+        <h4>Go to main</h4>
+      </Link>
     </div>
   );
 }
